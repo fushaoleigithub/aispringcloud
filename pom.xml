@@ -20,6 +20,7 @@
         <module>hystrix</module>
         <module>nativeconfigserver</module>
         <module>nativeconfigclient</module>
+        <module>configserver</module>
     </modules>
 
     <!--1、使用springboot引入父依赖-->
