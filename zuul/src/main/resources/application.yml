@@ -1,0 +1,16 @@
+server:
+  port: 8030
+spring:
+  application:
+    name: gateway
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+zuul:       #这个位置的空格千万不能写错，写错了就会出问题
+  routes:
+    provider: /p/**
+
+
+
+#     设计网关

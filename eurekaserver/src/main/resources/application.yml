@@ -1,0 +1,12 @@
+server:
+  port: 8761
+#  以上为配置了注册中心的端口
+
+#是否需要在注册中心把自己作为一个微服务作为注册
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: true          #是否要同步其他的注册中心的数据
+    service-url:
+      defaultZone: http://localhost:8761/eureka/        #访问注册中心的路径
+
